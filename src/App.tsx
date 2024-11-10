@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className='flex flex-row bg-black w-24 h-24'>
-        salam
+        salama
       </div>
     </>
   )
