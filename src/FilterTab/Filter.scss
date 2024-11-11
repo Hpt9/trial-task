@@ -1,0 +1,40 @@
+#root > div > div:nth-child(2) > div > button{
+    width: fit-content !important;
+}
+div.filters_div.flex.gap-3.w-fit.h-fit > button{
+    box-shadow: none;
+    color: rgba(64, 63, 63, 1);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    &:hover{
+        color: rgba(34, 56, 95, 1);
+        border: 1px solid rgba(34, 56, 95, 1);
+        background-color: transparent;
+        svg.hovarable{
+            path{
+                fill: rgba(34, 56, 95, 1);
+            }
+        }
+    }
+    .isWhite{
+        path{
+            fill: white;
+        }
+    }
+}
+.sendBtn{
+    width: 100%;
+    margin-top: 10px;
+    transition: all ease-in-out .2s;
+    color: white;
+    border: 1px solid transparent;
+    background-color: rgba(34, 56, 95, 1);
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 11px;
+    &:hover{
+        border-color: rgba(34, 56, 95, 1);
+        color: rgba(34, 56, 95, 1);
+        background-color: white;
+    }
+}
