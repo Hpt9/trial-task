@@ -102,7 +102,7 @@ export function SidebarWithBurgerMenu() {
               <ListItem className="p-0" selected={open === 2} >
                 <AccordionHeader
                   onClick={() => handleOpen(2)}
-                  
+                  style={{borderRadius:"16px"}}
                   className="border-b-0 p-3"
                 >
                   <ListItemPrefix>
