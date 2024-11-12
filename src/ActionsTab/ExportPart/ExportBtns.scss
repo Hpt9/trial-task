@@ -1,0 +1,34 @@
+.review,
+.exports {
+    &>button {
+        
+        border: 1px solid rgba(229, 231, 234, 1);
+        border-radius: 8px;
+        box-shadow: none;
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            border: 1px solid rgba(229, 231, 234, 1);
+            background-color: white;
+        }
+    }
+}
+
+.review>button {
+    color: rgba(109, 109, 109, 1);
+
+    &:hover {
+        &>span.circle {
+            background-color: rgba(34, 56, 95, 1);
+        }
+        &>span:last-child{
+            color: rgba(34, 56, 95, 1);
+        }
+    }
+}
+
+.exports>button {
+    color: rgba(64, 63, 63, 1);
+}

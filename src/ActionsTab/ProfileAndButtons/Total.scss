@@ -1,0 +1,26 @@
+.notifications {
+    background-color: rgba(207, 33, 33, 1);
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 100%;
+
+    &>p {
+        font-size: 8px;
+        color: white;
+    }
+}
+.actions_btn>button{
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: none;
+    &:nth-child(odd){
+        border: 1px solid rgba(229, 231, 234, 1);
+        color: black;
+    }
+    &:nth-child(2){
+        background-color: rgba(34, 56, 95, 1);
+        &:hover{
+            background-color: rgb(44, 73, 123);
+        }
+    }
+}

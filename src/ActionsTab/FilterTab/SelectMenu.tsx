@@ -32,6 +32,7 @@ interface ComboboxDemoProps {
 export function ComboboxDemo({ frameworks, placeHolder, isFirst }: ComboboxDemoProps) {
     const [open, setOpen] = React.useState(false);
     const [selectedValues, setSelectedValues] = useState<string[]>([]);
+
     const toggleValue = (currentValue: string) => {
         setSelectedValues((prevValues) =>
             prevValues.includes(currentValue)
@@ -39,9 +40,11 @@ export function ComboboxDemo({ frameworks, placeHolder, isFirst }: ComboboxDemoP
                 : [...prevValues, currentValue]
         );
     };
-    // const selectedLabels = selectedValues
-    //     .map((value) => frameworks.find((framework) => framework.value === value)?.label)
-    //     .join(", ");
+
+    // Function to clear all selected values
+    const clearAll = () => {
+        setSelectedValues([]);
+    };
 
     return (
         <Popover open={open} onOpenChange={setOpen}>
@@ -69,19 +72,21 @@ export function ComboboxDemo({ frameworks, placeHolder, isFirst }: ComboboxDemoP
             </PopoverTrigger>
             <PopoverContent
                 className="w-[200px] p-0"
-                // style={{ transform: "translateX(52px)" }}
             >
                 <Command>
-                    <CommandInput placeholder="Search framework..." className="h-9" />
+                    <CommandInput placeholder="Search..." className="h-9" />
                     <CommandList>
                         <CommandEmpty>No framework found.</CommandEmpty>
+                        <div className="flex justify-between px-4 py-2">
+                            <button onClick={clearAll} className="text-blue-500" style={{fontSize:"12px"}}>Sıfırla</button>
+                        </div>
                         <CommandGroup>
                             {frameworks.map((framework) => (
                                 <CommandItem
                                     key={framework.value}
                                     value={framework.value}
                                     onSelect={() => toggleValue(framework.value)}
-                                    style={{color:"rgba(109, 109, 109, 1)"}}
+                                    style={{ color: "rgba(109, 109, 109, 1)" }}
                                 >
                                     {framework.label}
                                     <Check
@@ -92,7 +97,7 @@ export function ComboboxDemo({ frameworks, placeHolder, isFirst }: ComboboxDemoP
                                     />
                                 </CommandItem>
                             ))}
-                        <button className="sendBtn">Göstər</button>
+                            <button className="sendBtn">Göstər</button>
                         </CommandGroup>
                     </CommandList>
                 </Command>

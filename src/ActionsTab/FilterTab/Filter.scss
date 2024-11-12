@@ -1,4 +1,4 @@
-#root > div > div:nth-child(2) > div > button{
+#root > div > div.flex.flex-col.gap-y-3 > div > div > button{
     width: fit-content !important;
 }
 div.filters_div.flex.gap-3.w-fit.h-fit > button{
