@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import React from 'react'
 import StatusIcon from '../../assets/f7_status.svg'
 import CalendarIcon from '../../assets/stash_data-date-duotone.svg'
 

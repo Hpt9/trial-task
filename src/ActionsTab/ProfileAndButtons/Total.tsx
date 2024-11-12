@@ -1,4 +1,3 @@
-import React from 'react'
 import './Total.scss'
 import Buttons from './Buttons'
 import Profile from './Profile'

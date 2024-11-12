@@ -1,4 +1,4 @@
-import '../SideBar/Sidebar.scss'
+import './SideBar.scss'
 import { SidebarWithBurgerMenu } from './SideBar'
 import SALESSVG from '../assets/carbon_sales-ops.svg'
 import PLAN from '../assets/grommet-icons_plan.svg'

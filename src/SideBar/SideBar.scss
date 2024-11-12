@@ -26,6 +26,15 @@
     }
     
 }
+#root > div > div:nth-child(1) > div > div:nth-child(1) > div.fixed.z-\[9999\].pointer-events-auto.bg-white.box-border.w-full.shadow-2xl.shadow-blue-gray-900\/10.top-0.left-0.side-bar > div > nav > div:focus{
+    background-color: #1F3D74;
+    color: white;
+}
+#root > div > div:nth-child(1) > div > div:nth-child(1) > button{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
 #root > div > div > div > div:nth-child(1) > div > div > nav {
     &>div:hover{
         background-color: #1F3D74;

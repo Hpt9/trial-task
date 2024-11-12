@@ -1,5 +1,4 @@
 import FilterTab from '@/ActionsTab/FilterTab/FilterTab'
-import React from 'react'
 import Total from './ProfileAndButtons/Total'
 
 export default function Actions() {

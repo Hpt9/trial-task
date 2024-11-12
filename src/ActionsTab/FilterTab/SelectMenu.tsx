@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Check, ChevronsUpDown } from "lucide-react";
+import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,7 +29,7 @@ interface ComboboxDemoProps {
     isFirst?: boolean; // New prop to check if it's the first instance
 }
 
-export function ComboboxDemo({ frameworks, placeHolder, isFirst }: ComboboxDemoProps) {
+export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
     const [open, setOpen] = React.useState(false);
     const [selectedValues, setSelectedValues] = useState<string[]>([]);
 
