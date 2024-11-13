@@ -5,7 +5,7 @@ import Excel from '../../assets/vscode-icons_file-type-excel.svg'
 export default function Buttons() {
   return (
     <div className='actions_btn flex gap-x-2'>
-        <Button className="hover:bg-blue-gray-100">
+        <Button className="hover:bg-blue-gray-100 p-3">
             <img src={RefreshIcon} alt="" />
         </Button>
         <Button className='flex items-center gap-x-2'>

@@ -5,6 +5,7 @@ import {
     getCoreRowModel,
     flexRender,
 } from "@tanstack/react-table";
+
 import { data } from "@/data";
 
 const columns: ColumnDef<any>[] = [
@@ -53,6 +54,7 @@ export default function ProgressTable() {
     });
     
     return (
+        
         <div className="progress_table table-container text-xs">
             <table>
                 <thead>
@@ -69,25 +71,25 @@ export default function ProgressTable() {
                         <th colSpan={4} style={{ padding: "0px 25px", border: "1px solid #ccc", textAlign: "center" }} className="quadHead text-base exam-bg">
                             Imtahan
                         </th>
-                        <th colSpan={2} style={{ padding: "0px 25px", border: "1px solid #ccc", textAlign: "center" }} className="doubleHead text-base">
+                        <th colSpan={2} style={{ padding: "0px 25px", border: "1px solid #ccc", textAlign: "center" }} className="doubleHead text-base phase_bg">
                             Mərhələ
                         </th>
                     </tr>
                     <tr>
-                        <th className=" text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
-                        <th className=" text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
-                        <th className=" text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
-                        <th className=" text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
-                        <th className=" text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
-                        <th className=" text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
-                        <th className=" text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
-                        <th className=" text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
-                        <th className=" text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
-                        <th className=" text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
-                        <th className=" text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
-                        <th className=" text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
-                        <th className=" text-xs" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Planned Start</th>
-                        <th className=" text-xs" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Planned End</th>
+                        <th className="text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
+                        <th className="text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
+                        <th className="text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
+                        <th className="text-xs vacancy-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
+                        <th className="text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
+                        <th className="text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
+                        <th className="text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
+                        <th className="text-xs cv-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
+                        <th className="text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled Start</th>
+                        <th className="text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Scheduled End</th>
+                        <th className="text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual Start</th>
+                        <th className="text-xs exam-bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Actual End</th>
+                        <th className="text-xs phase_bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Planned Start</th>
+                        <th className="text-xs phase_bg" style={{ padding: "0px 5px", border: "1px solid #ccc", textAlign: "center" }}>Planned End</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -100,8 +102,12 @@ export default function ProgressTable() {
                                 
                                 if (accessorKey?.startsWith("VacancyAnnouncement")) {
                                     customClass = "vacancy_td";
+                                } else if (accessorKey?.startsWith("CVEvaluation")) {
+                                    customClass = "cv_td";
                                 } else if (accessorKey?.startsWith("Exam")) {
                                     customClass = "exam_td";
+                                } else if (accessorKey?.startsWith("Phase")) {
+                                    customClass = "phase_td";
                                 }
 
                                 return (

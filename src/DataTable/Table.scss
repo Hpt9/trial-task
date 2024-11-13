@@ -81,12 +81,21 @@
         background-color: rgba(54, 138, 194, 1);
         border: 1px solid rgba(85, 165, 219, 1) !important;
     }
+    
     .exam-bg{
         background-color: rgba(33, 152, 134, 1);
         border: 1px solid rgba(51, 179, 160, 1) !important;
     }
     .exam_td{
         background-color: rgba(220, 238, 236, 1);
+        border-color: white !important;
+    }
+    .phase_bg{
+        background-color: rgba(175, 32, 130, 1);
+        border-color:white !important
+    }
+    .phase_td{
+        background-color: rgba(175, 32, 130, 0.2);
         border-color: white !important;
     }
 }

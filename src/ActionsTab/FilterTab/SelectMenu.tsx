@@ -32,6 +32,7 @@ interface ComboboxDemoProps {
 export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
     const [open, setOpen] = React.useState(false);
     const [selectedValues, setSelectedValues] = useState<string[]>([]);
+    const [hoveredValue, setHoveredValue] = useState<string | null>(null); // Track hovered item
 
     const toggleValue = (currentValue: string) => {
         setSelectedValues((prevValues) =>
@@ -41,7 +42,6 @@ export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
         );
     };
 
-    // Function to clear all selected values
     const clearAll = () => {
         setSelectedValues([]);
     };
@@ -86,7 +86,15 @@ export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
                                     key={framework.value}
                                     value={framework.value}
                                     onSelect={() => toggleValue(framework.value)}
-                                    style={{ color: "rgba(109, 109, 109, 1)" }}
+                                    onMouseEnter={() => setHoveredValue(framework.value)}
+                                    onMouseLeave={() => setHoveredValue(null)}
+                                    style={{
+                                        color: "rgba(109, 109, 109, 1)",
+                                        backgroundColor:
+                                            selectedValues.includes(framework.value) || hoveredValue === framework.value
+                                                ? "rgba(233, 236, 243, 1)"
+                                                : "transparent",
+                                    }}
                                 >
                                     {framework.label}
                                     <Check

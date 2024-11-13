@@ -1,11 +1,14 @@
 import ProgressTable from './ProgressTable'
 import './Table.scss'
 import { data } from '@/data'
+import { ScrollArea,ScrollBar } from "@/components/ui/scroll-area"
+
 export default function ShowedTable() {
     console.log(data)
   return (
-    <div className='flex overflow-x-scroll'>
+    <ScrollArea className='flex w-full'>
         <ProgressTable/>
-    </div>
+        <ScrollBar orientation="horizontal" />
+    </ScrollArea>
   )
 }
