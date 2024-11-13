@@ -42,6 +42,10 @@
         }
     }
 }
+#root > div > div:nth-child(1) > div > div:nth-child(1) > div.fixed.z-\[9999\].pointer-events-auto.bg-white.box-border.w-full.shadow-2xl.shadow-blue-gray-900\/10.top-0.left-0.side-bar > div > div.mb-2.flex.items-center.gap-4.p-4 > h5 > p{
+    display: flex;
+    align-items: center;
+}
 #root > div > div:nth-child(1) > div > div:nth-child(1) > div.fixed.z-\[9999\].pointer-events-auto.bg-white.box-border.w-full.shadow-2xl.shadow-blue-gray-900\/10.top-0.left-0.side-bar > div > div.p-2 > div > label{
     padding-left: 30px;
 }
