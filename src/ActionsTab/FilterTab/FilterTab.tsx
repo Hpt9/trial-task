@@ -80,7 +80,7 @@ export default function FilterTab() {
     },
   ]
   return (
-    <div className='filters_div flex gap-3 w-fit h-fit'>
+    <div className='filters_div flex gap-2 w-fit h-fit'>
       <ComboboxDemo frameworks={cities} placeHolder='Şəhər' isFirst/>
       <ComboboxDemo frameworks={years} placeHolder='İl'/>
       <ComboboxDemo frameworks={months} placeHolder='Ay'/>

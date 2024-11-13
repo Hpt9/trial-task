@@ -89,6 +89,7 @@ export function SidebarWithBurgerMenu() {
               </div>
             </ListItem>
             <Accordion
+            onMouseLeave={()=> handleOpen(3)}
               open={open === 2}
               icon={
                 <ChevronDownIcon
@@ -99,7 +100,7 @@ export function SidebarWithBurgerMenu() {
                 />
               }
             >
-              <ListItem className="p-0" selected={open === 2} >
+              <ListItem className="p-0" selected={open === 2}>
                 <AccordionHeader
                   onClick={() => handleOpen(2)}
                   style={{borderRadius:"16px"}}
@@ -113,7 +114,7 @@ export function SidebarWithBurgerMenu() {
                   </Typography>
                 </AccordionHeader>
               </ListItem>
-              <AccordionBody className="py-1" onMouseLeave={()=> handleOpen(3)}>
+              <AccordionBody className="py-1">
                 <List className="p-0">
                   <ListItem>
                     <ListItemPrefix>

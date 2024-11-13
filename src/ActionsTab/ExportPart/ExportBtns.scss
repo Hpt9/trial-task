@@ -18,14 +18,13 @@
 
 .review>button {
     color: rgba(109, 109, 109, 1);
-
-    &:hover {
-        &>span.circle {
-            background-color: rgba(34, 56, 95, 1);
-        }
-        &>span:last-child{
-            color: rgba(34, 56, 95, 1);
-        }
+}
+.active_review_button{
+    &>span.circle {
+        background-color: rgba(34, 56, 95, 1);
+    }
+    &>span:last-child{
+        color: rgba(34, 56, 95, 1);
     }
 }
 

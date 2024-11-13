@@ -46,6 +46,9 @@
     display: flex;
     align-items: center;
 }
+#root > div > div:nth-child(1) > div > div:nth-child(1) > div.fixed.z-\[9999\].pointer-events-auto.bg-white.box-border.w-full.shadow-2xl.shadow-blue-gray-900\/10.top-0.left-0.side-bar > div > nav > div.block.relative.w-full > div.overflow-hidden > div > nav > div:focus{
+    background-color: #275EC3;
+}
 #root > div > div:nth-child(1) > div > div:nth-child(1) > div.fixed.z-\[9999\].pointer-events-auto.bg-white.box-border.w-full.shadow-2xl.shadow-blue-gray-900\/10.top-0.left-0.side-bar > div > div.p-2 > div > label{
     padding-left: 30px;
 }
