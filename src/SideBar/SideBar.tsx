@@ -65,18 +65,18 @@ export function SidebarWithBurgerMenu() {
               className="h-8 w-8"
             />
             <Typography variant="h5" color="blue-gray" className="flex justify-between w-full">
-              <p>Menu</p>
+              <p className='text-sm'>Menu</p>
               {isDrawerOpen && (
                 <XMarkIcon className="h-7 w-7 stroke-2 hover:cursor-pointer" onClick={closeDrawer}/>
               )
             }
             </Typography>
           </div>
-          <div className="p-2">
-            <Input
-              icon={<MagnifyingGlassIcon className="h-5 w-5" />}
-              label="Search"
-            />
+          <div className="menu_search_parent">
+            <div className="p-2 flex menu_search items-center gap-x-3 px-2">
+              <MagnifyingGlassIcon className="h-5 w-5" />
+              <input type="text" className="menu_search_input" placeholder="Search"/>
+            </div>
           </div>
           <List>
           <ListItem>
@@ -84,7 +84,7 @@ export function SidebarWithBurgerMenu() {
                 <img src={SALESSVG} alt="sales_photo" />
               </ListItemPrefix>
               <div>
-                <p>Satınalma İcmalı</p>
+                <p className='text-sm'>Satınalma İcmalı</p>
                 <span className="circle flex"></span>
               </div>
             </ListItem>
@@ -109,7 +109,7 @@ export function SidebarWithBurgerMenu() {
                     <img src={PLAN} alt="" />
                   </ListItemPrefix>
                   <Typography color="blue-gray" className="mr-auto font-normal">
-                    Planlama
+                    <p  className='text-sm'>Planlama</p>
                   </Typography>
                 </AccordionHeader>
               </ListItem>
@@ -119,19 +119,19 @@ export function SidebarWithBurgerMenu() {
                     <ListItemPrefix>
                       <img src={Frame} alt="frame_photo" />
                     </ListItemPrefix>
-                    Master Schedule
+                    <p  className='text-xs'>Master Schedule</p>
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
                       <img src={GovLine} alt="gov_photo" />
                     </ListItemPrefix>
-                    Dövlət qürumları ilə iş
+                    <p className="text-xs">Dövlət qürumları ilə iş</p>
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
                       <img src={RepData} alt="" />
                     </ListItemPrefix>
-                    Hesabat
+                    <p className="text-xs">Hesabat</p>
                   </ListItem>
                 </List>
               </AccordionBody>
@@ -140,25 +140,25 @@ export function SidebarWithBurgerMenu() {
               <ListItemPrefix>
                 <img src={SALESREPORT} alt="report_photo" />
               </ListItemPrefix>
-              Maliyyə
+              <p className="text-sm">Maliyyə</p>
             </ListItem>
             <ListItem>
               <ListItemPrefix>
                 <img src={COMP} alt="company_photo" />
               </ListItemPrefix>
-              Şirkət Məlumatları
+              <p className="text-sm">Şirkət Məlumatları</p>
             </ListItem>
             <ListItem>
               <ListItemPrefix>
                 <img src={CHART} alt="chart_photo" />
               </ListItemPrefix>
-              İş qrafiki 
+              <p className="text-sm">İş qrafiki</p> 
             </ListItem>
             <ListItem>
               <ListItemPrefix>
                 <img src={FOLDER} alt="folder_photo" />
               </ListItemPrefix>
-              Keyfiyyət
+              <p className="text-sm">Keyfiyyət</p>
             </ListItem>
           </List>
         </Card>
