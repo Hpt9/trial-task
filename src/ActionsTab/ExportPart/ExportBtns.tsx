@@ -5,7 +5,7 @@ import ExcelIcon from '../../assets/vscode-icons_file-type-excel.svg';
 import AdobeIcon from '../../assets/vscode-icons_file-type-pdf2.svg';
 
 export default function ExportButtons() {
-    const [activeButton, setActiveButton] = useState<string>('');
+    const [activeButton, setActiveButton] = useState<string>('icmal');
 
     return (
         <div className='flex justify-between items-center'>

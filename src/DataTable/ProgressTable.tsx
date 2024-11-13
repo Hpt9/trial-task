@@ -5,7 +5,7 @@ import {
     getCoreRowModel,
     flexRender,
 } from "@tanstack/react-table";
-
+import { motion } from "motion/react"
 import { data } from "@/data";
 
 const columns: ColumnDef<any>[] = [
@@ -52,10 +52,14 @@ export default function ProgressTable() {
         columns,
         getCoreRowModel: getCoreRowModel(),
     });
-    
+
     return (
-        
-        <div className="progress_table table-container text-xs">
+
+        <motion.div
+            initial={{ x: -10 }}
+            animate={{ x: 0 }}
+            exit={{ x: -10 }}
+            className="progress_table table-container text-xs">
             <table>
                 <thead>
                     <tr>
@@ -99,7 +103,7 @@ export default function ProgressTable() {
                                 // Determine the appropriate class based on the cell's accessor key
                                 const accessorKey = cell.column.columnDef.accessorKey;
                                 let customClass = "";
-                                
+
                                 if (accessorKey?.startsWith("VacancyAnnouncement")) {
                                     customClass = "vacancy_td";
                                 } else if (accessorKey?.startsWith("CVEvaluation")) {
@@ -129,6 +133,6 @@ export default function ProgressTable() {
                     ))}
                 </tbody>
             </table>
-        </div>
+        </motion.div>
     );
 }
