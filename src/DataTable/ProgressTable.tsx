@@ -120,7 +120,7 @@ export default function ProgressTable() {
                                         style={{
                                             padding: "8px 25px",
                                             border: "1px solid #ccc",
-                                            textAlign: "left",
+                                            textAlign: "center",
                                         }}
                                         className={`${index === 0 ? 'beforeContent' : ''} text-sm ${customClass}`}
                                     >

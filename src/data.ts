@@ -71,7 +71,7 @@ export const data = [
         "company":"Paşa Holding",
         "hr":"Şirzad Vəlioğlu",
         "role":"Dizayner",
-        "reference":"JobSearch.az",
+        "reference":"JobSearchnjjjjjjjjjjjjjjjjjjjjjjjjjjjj.az",
         "VacancyAnnouncementScheduledStart":"01.10.2024",
         "VacancyAnnouncementScheduledEnd":"20.12.2024",
         "VacancyAnnouncementActualStart":"01.10.2024",

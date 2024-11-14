@@ -9,7 +9,11 @@
                 }
             }
         }
-
+        tbody{
+            tr td:not(:first-of-type){
+                text-align: center;
+            }
+        }
         border-collapse: separate;
         border-spacing: 0 0;
         table-layout: fixed;
