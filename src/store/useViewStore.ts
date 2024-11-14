@@ -6,7 +6,7 @@ interface ViewStore {
 }
 
 const useViewStore = create<ViewStore>((set) => ({
-  view: 'progress',
+  view: 'plan',
   setView: (newView) => set({ view: newView }),
 }));
 

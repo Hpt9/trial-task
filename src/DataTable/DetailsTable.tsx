@@ -67,7 +67,7 @@ export default function DetailsTable() {
                 initial={{ x: -10 }}
                 animate={{ x: 0 }}
                 exit={{ x: -10 }}
-                className="table-container overflow-x-scroll"
+                className="table-container"
             >
                 <table className="details_table table">
                     <thead>

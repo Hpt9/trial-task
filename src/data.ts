@@ -88,3 +88,66 @@ export const data = [
         "PhasePlannedEnd":"15.01.2025"
     }
 ]
+
+export const data2 = [
+    {
+        "nameSurname":"Turanə Səlimova",
+        "Vspi":0.3,
+        "CVspi":0.3,
+        "Espi":0.3,
+        "Pspi":0.3,
+        "vacancyPlan":67.6,
+        "vacancyActual":32.4,
+        "CVPlan":67.6,
+        "CVActual":32.4,
+        "ExamPlan":67.6,
+        "ExamActual":32.4,
+        "PhasePlan":67.6,
+        "PhaseActual":32.4
+    },
+    {
+        "nameSurname":"Əhməd Musazadə",
+        "Vspi":0.95,
+        "CVspi":0.95,
+        "Espi":0.95,
+        "Pspi":0.95,
+        "vacancyPlan":67.6,
+        "vacancyActual":32.4,
+        "CVPlan":67.6,
+        "CVActual":32.4,
+        "ExamPlan":67.6,
+        "ExamActual":32.4,
+        "PhasePlan":67.6,
+        "PhaseActual":32.4
+    },
+    {
+        "nameSurname":"Mahizər Əhmədli",
+        "Vspi":1,
+        "CVspi":1,
+        "Espi":1,
+        "Pspi":1,
+        "vacancyPlan":67.6,
+        "vacancyActual":32.4,
+        "CVPlan":67.6,
+        "CVActual":32.4,
+        "ExamPlan":67.6,
+        "ExamActual":32.4,
+        "PhasePlan":67.6,
+        "PhaseActual":32.4
+    },
+    {
+        "nameSurname":"Musa Soltanlı",
+        "Vspi":0.1,
+        "CVspi":0.1,
+        "Espi":0.1,
+        "Pspi":0.1,
+        "vacancyPlan":67.6,
+        "vacancyActual":32.4,
+        "CVPlan":67.6,
+        "CVActual":32.4,
+        "ExamPlan":67.6,
+        "ExamActual":32.4,
+        "PhasePlan":67.6,
+        "PhaseActual":32.4
+    }
+]
