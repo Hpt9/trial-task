@@ -79,14 +79,72 @@ export default function FilterTab() {
       label: "May",
     },
   ]
+  const roles = [
+    {
+      value: "chiefTechOfficer",
+      label: "Chief Technology Office",
+    },
+    {
+      value: "creativeDirector",
+      label: "Creative Director",
+    },
+    {
+      value: "headOfMarketing",
+      label: "Head of Marketing",
+    },
+    {
+      value: "softEngineer",
+      label: "Software Engineer",
+    }
+  ]
+  const company = [
+    {
+      value: "agroExp",
+      label: "AgroExp",
+    },
+    {
+      value: "bakuTech",
+      label: "BakuTech",
+    },
+    {
+      value: "bakuPearl",
+      label: "Baku Pearl",
+    },
+    {
+      value: "lenFarms",
+      label: "LenFarms",
+    },
+    {
+      value: "naxTrans",
+      label: "NaxTrans",
+    },
+  ]
+  const hr = [
+    {
+      value: "hr1",
+      label: "Aysel Hasanova",
+    },
+    {
+      value: "hr2",
+      label: "Farid Aliyev",
+    },
+    {
+      value: "hr3",
+      label: "Sama Safarova",
+    },
+    {
+      value: "hr4",
+      label: "Hikmet Karimov",
+    },
+  ]
   return (
     <div className='filters_div flex gap-2 w-fit h-fit'>
       <ComboboxDemo frameworks={cities} placeHolder='Şəhər' isFirst/>
       <ComboboxDemo frameworks={years} placeHolder='İl'/>
       <ComboboxDemo frameworks={months} placeHolder='Ay'/>
-      <ComboboxDemo frameworks={months} placeHolder='Vəzifə'/>
-      <ComboboxDemo frameworks={months} placeHolder='Şirkət'/>
-      <ComboboxDemo frameworks={months} placeHolder='HR mütəxəssis'/>
+      <ComboboxDemo frameworks={roles} placeHolder='Vəzifə'/>
+      <ComboboxDemo frameworks={company} placeHolder='Şirkət'/>
+      <ComboboxDemo frameworks={hr} placeHolder='HR mütəxəssis'/>
     </div>
   )
 }
