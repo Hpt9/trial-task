@@ -1,22 +1,26 @@
 .progress_table {
     table {
-        tr:last-of-type{
-            td:first-of-type{
+        tr:last-of-type {
+            td:first-of-type {
                 border-bottom-left-radius: 8px;
-                .rectangle{
+
+                .rectangle {
                     border-bottom-left-radius: 8px;
                 }
             }
         }
+
         border-collapse: separate;
         border-spacing: 0 0;
         table-layout: fixed;
         width: 100%;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        th{
+
+        th {
             color: white;
         }
+
         .oneHead {
             width: 236px !important;
             border-top-left-radius: 8px;
@@ -36,7 +40,8 @@
             width: 600px !important;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-            th{
+
+            th {
                 padding: 0 !important;
                 margin: 0 !important;
             }
@@ -49,7 +54,8 @@
             border-left: none !important;
             display: flex;
             color: rgba(0, 87, 168, 1);
-            .rectangle{
+
+            .rectangle {
                 display: block;
                 width: 8px;
                 height: 105%;
@@ -58,6 +64,7 @@
                 position: absolute;
                 background-color: rgba(34, 56, 95, 1);
             }
+
             // &::before {
             //     content: "";
             //     position: absolute;
@@ -69,33 +76,97 @@
             // }
         }
     }
-    .vacancy-bg{
+
+    .vacancy-bg {
         background-color: rgba(41, 81, 151, 1);
         border: 1px solid rgba(64, 105, 178, 1) !important;
     }
-    .vacancy_td{
+
+    .vacancy_td {
         background-color: rgba(233, 236, 243, 1);
         border-color: white !important;
     }
-    .cv-bg{
+
+    .cv-bg {
         background-color: rgba(54, 138, 194, 1);
         border: 1px solid rgba(85, 165, 219, 1) !important;
     }
-    
-    .exam-bg{
+
+    .exam-bg {
         background-color: rgba(33, 152, 134, 1);
         border: 1px solid rgba(51, 179, 160, 1) !important;
     }
-    .exam_td{
+
+    .exam_td {
         background-color: rgba(220, 238, 236, 1);
         border-color: white !important;
     }
-    .phase_bg{
+
+    .phase_bg {
         background-color: rgba(175, 32, 130, 1);
-        border-color:white !important
+        border-color: white !important
     }
-    .phase_td{
+
+    .phase_td {
         background-color: rgba(175, 32, 130, 0.2);
         border-color: white !important;
+    }
+}
+
+.details_table {
+    border-collapse: separate;
+    border-spacing: 0 0;
+    table-layout: fixed;
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    td,th{
+        border: 1px solid rgba(223, 224, 226, 1);
+        white-space: nowrap;
+    }
+    tr:first-of-type{
+        th:first-of-type{
+            background-color: rgba(34, 56, 95, 1);
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 6px 20px;
+            width: 236px;
+            border: none;
+        }
+        th:not(:first-of-type){
+            background-color: rgba(232, 238, 248, 1);
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(34, 56, 95, 1);
+            width: fit-content;
+            padding: 9px 14px;
+        }
+        th{
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+    tbody tr{
+        td{
+            text-align: center;
+            padding: 7px 10px;
+        }
+        td:first-of-type{
+            color: rgba(0, 87, 168, 1);
+            font-size: 14px;
+            padding-left: 24px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: -2px;
+                left: -1px;
+                width: 8px;
+                height: 106%;
+                background-color: rgba(34, 56, 95, 1);
+            }
+        }
     }
 }
