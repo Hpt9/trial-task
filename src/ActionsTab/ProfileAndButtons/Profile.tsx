@@ -10,7 +10,7 @@ export default function Profile() {
     <div className='flex gap-x-3'>
       <div className='flex relative'>
         <img src={Bell} alt="" />
-        <div className='notifications absolute left-2.5 top-4 font-bold flex items-center justify-center'>
+        <div className='notifications rounded-full absolute left-2.5 top-4 font-bold flex items-center justify-center'>
           <p>5</p>
         </div>
       </div>

@@ -2,15 +2,12 @@
     background-color: rgba(207, 33, 33, 1);
     width: 12.5px;
     height: 12.5px;
-    border-radius: 100%;
-
     &>p {
         font-size: 8px;
         color: white;
     }
 }
 .actions_btn>button{
-    background-color: white;
     border: 1px solid transparent;
     box-shadow: none;
     &:nth-child(odd){
@@ -19,8 +16,6 @@
     }
     &:nth-child(2){
         background-color: rgba(34, 56, 95, 1);
-        &:hover{
-            background-color: rgb(44, 73, 123);
-        }
+        &:hover{background-color: rgb(44, 73, 123);}
     }
 }

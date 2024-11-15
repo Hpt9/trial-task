@@ -11,21 +11,21 @@ export default function ExportButtons() {
         <div className='flex justify-between items-center'>
             <div className="review flex items-center gap-x-2">
                 <Button
-                    className={`flex items-center gap-x-1 bg-white relative hover:bg-gray-100 p-1.5 ${
+                    className={`flex items-center gap-x-1 bg-white relative rounded-lg hover:bg-gray-100 p-1.5 ${
                         activeButton === "icmal" ? "active_review_button" : ""
                     }`}
                     onClick={() => setActiveButton("icmal")}
                 >
-                    <span className="circle flex"></span>
+                    <span className="circle flex bg-white rounded-full"></span>
                     <span>Icmal</span>
                 </Button>
                 <Button
-                    className={`flex items-center gap-x-1 bg-white relative hover:bg-gray-100 p-1.5 ${
+                    className={`flex items-center gap-x-1 bg-white relative rounded-lg hover:bg-gray-100 p-1.5 ${
                         activeButton === "tam" ? "active_review_button" : ""
                     }`}
                     onClick={() => setActiveButton("tam")}
                 >
-                    <span className="circle flex"></span>
+                    <span className="circle flex bg-white rounded-full"></span>
                     <span>Tam</span>
                 </Button>
             </div>
