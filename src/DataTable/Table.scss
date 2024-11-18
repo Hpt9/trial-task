@@ -1,3 +1,7 @@
+.plans_table,.progress_table,.details_table{
+    max-width: 1800px;
+}
+
 .progress_table table{
         tr:last-of-type td:first-of-type{
                 border-bottom-left-radius: 8px;
@@ -136,9 +140,9 @@
     }
 }
 .plans_table {
-    *{white-space: nowrap;}
     border-collapse: separate;
     border-spacing: 0 0;
+    width: 100%;
     table-layout: fixed;
     th {color: white;}
     td,th {border: 1px solid gray;}

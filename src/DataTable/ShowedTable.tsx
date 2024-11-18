@@ -1,6 +1,5 @@
 import ProgressTable from './ProgressTable'
 import './Table.scss'
-import { data } from '@/data'
 import { ScrollArea,ScrollBar } from "@/components/ui/scroll-area"
 import DetailsTable from './DetailsTable'
 import useViewStore from '@/store/useViewStore'
@@ -20,9 +19,8 @@ export default function ShowedTable() {
         TableComponent = null; // Handle the case where view doesn't match any option
     }
   return (
-    <ScrollArea className='flex w-full'>
+    <div className='flex w-full' style={{overflowX:"auto"}}>
         {TableComponent}
-        <ScrollBar orientation="horizontal" />
-    </ScrollArea>
+    </div>
   )
 }
