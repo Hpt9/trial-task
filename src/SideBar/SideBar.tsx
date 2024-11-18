@@ -52,7 +52,7 @@ export function SidebarWithBurgerMenu() {
           <img className="h-10 w-10 stroke-3" src={DotMenu}/>
         )}
       </IconButton>
-      <Drawer open={isDrawerOpen} onClose={closeDrawer} className="side-bar">
+      <Drawer open={isDrawerOpen} onClose={closeDrawer} onMouseLeave={closeDrawer} className="side-bar">
         <Card
           color="transparent"
           shadow={false}
@@ -89,9 +89,7 @@ export function SidebarWithBurgerMenu() {
               </div>
             </ListItem>
             <Accordion
-            // onMouseLeave={()=> {
-            //   setTimeout(()=>handleOpen(3),200)
-            // }}
+            onMouseLeave={()=> handleOpen(3)}
               open={open === 2}
               icon={
                 <ChevronDownIcon
