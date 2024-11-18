@@ -52,7 +52,7 @@ export function SidebarWithBurgerMenu() {
           <img className="h-10 w-10 stroke-3" src={DotMenu}/>
         )}
       </IconButton>
-      <Drawer open={isDrawerOpen} onClose={closeDrawer} className="side-bar">
+      <Drawer open={isDrawerOpen} onClose={closeDrawer} className="side-bar" onMouseLeave={closeDrawer}>
         <Card
           color="transparent"
           shadow={false}
