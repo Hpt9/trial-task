@@ -89,7 +89,9 @@ export function SidebarWithBurgerMenu() {
               </div>
             </ListItem>
             <Accordion
-            onMouseLeave={()=> handleOpen(3)}
+            onMouseLeave={()=> {
+              setTimeout(()=>handleOpen(3),200)
+            }}
               open={open === 2}
               icon={
                 <ChevronDownIcon
