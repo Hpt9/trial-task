@@ -52,7 +52,7 @@ export function SidebarWithBurgerMenu() {
           <img className="h-10 w-10 stroke-3" src={DotMenu}/>
         )}
       </IconButton>
-      <Drawer open={isDrawerOpen} onClose={closeDrawer} className="side-bar" onMouseLeave={closeDrawer}>
+      <Drawer open={isDrawerOpen} onClose={closeDrawer} className="side-bar">
         <Card
           color="transparent"
           shadow={false}
@@ -89,9 +89,9 @@ export function SidebarWithBurgerMenu() {
               </div>
             </ListItem>
             <Accordion
-            onMouseLeave={()=> {
-              setTimeout(()=>handleOpen(3),200)
-            }}
+            // onMouseLeave={()=> {
+            //   setTimeout(()=>handleOpen(3),200)
+            // }}
               open={open === 2}
               icon={
                 <ChevronDownIcon
@@ -126,13 +126,13 @@ export function SidebarWithBurgerMenu() {
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
-                      <img src={GovLine} alt="gov_photo" />
+                      <img src={GovLine} style={{width:"15px",height:"20px"}} alt="gov_photo" />
                     </ListItemPrefix>
                     <p className="text-xs">Dövlət qürumları ilə iş</p>
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
-                      <img src={RepData} alt="" />
+                      <img src={RepData} style={{width:"15px",height:"20px"}} alt="" />
                     </ListItemPrefix>
                     <p className="text-xs">Hesabat</p>
                   </ListItem>

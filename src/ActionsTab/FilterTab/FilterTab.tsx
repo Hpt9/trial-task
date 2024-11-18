@@ -55,29 +55,53 @@ export default function FilterTab() {
   ]
   const months = [
     {
-      value: "dekabr",
-      label: "Dekabr",
+      value: "yanvar",
+      label: "Yanvar",
     },
     {
-      value: "sentyabr",
-      label: "Sentyabr",
+      value: "fevral",
+      label: "Fevral",
     },
     {
-      value: "avqust",
-      label: "Avqust",
+      value: "mart",
+      label: "Mart",
+    },
+    {
+      value: "aprel",
+      label: "Aprel",
+    },
+    {
+      value: "may",
+      label: "May",
+    },
+    {
+      value: "iyun",
+      label: "İyun",
     },
     {
       value: "iyul",
       label: "Iyul",
     },
     {
-      value: "iyun",
-      label: "Iyun",
+      value: "avqust",
+      label: "Avqust",
     },
     {
-      value: "may",
-      label: "May",
+      value: "sentyabr",
+      label: "Sentyabr",
     },
+    {
+      value: "oktyabr",
+      label: "Oktyabr",
+    },
+    {
+      value: "noyabr",
+      label: "Noyabr",
+    },
+    {
+      value: "dekabr",
+      label: "Dekabr",
+    }
   ]
   const roles = [
     {

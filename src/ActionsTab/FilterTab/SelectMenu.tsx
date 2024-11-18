@@ -75,12 +75,12 @@ export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
             >
                 <Command>
                     <CommandInput placeholder="Search..." className="h-9" />
-                    <CommandList>
+                    <CommandList className="p-0.5">
                         <CommandEmpty>No framework found.</CommandEmpty>
                         <div className="flex justify-between px-4 py-2">
                             <button onClick={clearAll} className="text-blue-500" style={{fontSize:"12px"}}>Sıfırla</button>
                         </div>
-                        <CommandGroup>
+                        <CommandGroup style={{maxHeight:"195px"}} className="overflow-y-auto">
                             {frameworks.map((framework) => (
                                 <CommandItem
                                     key={framework.value}
@@ -105,8 +105,8 @@ export function ComboboxDemo({ frameworks, placeHolder }: ComboboxDemoProps) {
                                     />
                                 </CommandItem>
                             ))}
-                            <button className="sendBtn">Göstər</button>
                         </CommandGroup>
+                            <button className="sendBtn">Göstər</button>
                     </CommandList>
                 </Command>
             </PopoverContent>

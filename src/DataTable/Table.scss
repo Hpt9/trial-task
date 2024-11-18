@@ -136,6 +136,7 @@
     }
 }
 .plans_table {
+    *{white-space: nowrap;}
     border-collapse: separate;
     border-spacing: 0 0;
     table-layout: fixed;
